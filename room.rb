@@ -7,4 +7,6 @@ class Room
     @guests = []
     @songs = songs
   end
+
+  
 end
