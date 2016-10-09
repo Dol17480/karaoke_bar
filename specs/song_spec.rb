@@ -11,12 +11,11 @@ class SongTest < Minitest::Test
     @song2 = Song.new("Oasis", "Supersonic")
     @song3 = Song.new("The Cribs", "Mens Needs")
     @songs = [@song1, @song2, @song3]
-    # @songs.push(song2)
-    # @songs << song3
+
   end
 
   def test_song_has_a_title
-   assert_equal("Oasis", @song2.artist() )
+   assert_equal("Oasis", @song2.artist())
 end
 
 
