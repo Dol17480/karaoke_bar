@@ -7,16 +7,26 @@ class Room
     @name = name
     @guests = []
     @songs = songs
-  end
 
-  def check_in_guest(name)
-    guests = @room.guests
-   @guest = guests[0]
-   return @guest
+    def check_in_guest(guest_name)
+      @guests << @guest
+    end
+
+    def guest_has_money(money)
+      room_rate = 500
+      if @guest <=> 500
+        puts "Enjoy your stay"
+      else 
+        "Sorry pal"
+
+      end
+
+      def room_has_music(artist)
+        @songs << @song1
+      end
 end
 
- # return @guests.map { |guest| guest.first_name }
 
+  end
 
-   # @guests == [0] ? "You're checked in" : "Sorry you need to check in"
 end
